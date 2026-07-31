@@ -13,11 +13,8 @@ rows <- readRows(goFilteredSheet, 2, 73, 1, 9)
 i <- 0
 for(x in rows[,1]){
   i = i + 1
-  print(class(x))
   res <- paste0("sp|", x,"|",rows[i,8])
-  print(res)
   cell <- getCells(access9[i], colIndex= 9:9, simplify= TRUE)[[1]]
-  print(class(cell))
   setCellValue(cell, res, richTextString = FALSE, showNA = TRUE)
 }
 print(i)

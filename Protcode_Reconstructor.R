@@ -8,7 +8,6 @@ javaImport(packages = "org.appache.poi")
 wb <- loadWorkbook("C:/Users/samue/OneDrive/UW/Roberts Lab/Sea Star Transcriptomics/Derm_Augustus_Collagen _Inquiry_Mapped_Practice copy.xlsx")
 goFilteredSheet <- getSheets(wb)[['GO_Filtered']]
 access9 = getRows(goFilteredSheet, rowIndex=NULL)
-getCell
 print(access9[1])
 rows <- readRows(goFilteredSheet, 2, 73, 1, 9)
 i <- 0

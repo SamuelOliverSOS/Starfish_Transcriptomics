@@ -11,7 +11,7 @@ access9 = getRows(goFilteredSheet, rowIndex=NULL)
 getCell
 print(access9[1])
 rows <- readRows(goFilteredSheet, 2, 73, 1, 9)
-i <- 1
+i <- 0
 for(x in rows[,1]){
   i = i + 1
   print(class(x))

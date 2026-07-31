@@ -14,7 +14,7 @@ i <- 0
 for(x in rows[,1]){
   i = i + 1
   res <- paste0("sp|", x,"|",rows[i,8])
-  cell <- getCells(access9[i], colIndex= 9:9, simplify= TRUE)[[1]]
+  cell <- getCells(access9[i+1], colIndex= 9:9, simplify= TRUE)[[1]]
   setCellValue(cell, res, richTextString = FALSE, showNA = TRUE)
 }
 print(i)

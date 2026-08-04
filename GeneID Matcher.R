@@ -1,4 +1,4 @@
-#gets geneIDs using protein codes, I will probably change this to just use the BLAST workbook in future versions, this was faster in this instance.
+#gets basemeans using protein codes, I will probably change this to just use the BLAST workbook in future versions, this was faster in this instance.
 library(xlsx)
 library(xlsxjars)
 library(rJava)

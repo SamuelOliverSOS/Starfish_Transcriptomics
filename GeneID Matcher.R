@@ -6,7 +6,7 @@ library(readxl)
 options(java.parameters = "-Xss4m")
 javaImport(packages = "org.appache.poi")
 .jinit()
-wb <- loadWorkbook("C:/Users/samue/OneDrive/UW/Roberts Lab/Sea Star Transcriptomics/Derm_Augustus_Collagen _Inquiry_Mapped_Practice copy.xlsx")
+wb <- loadWorkbook("C:/Users/samue/OneDrive/UW/Roberts Lab/Sea Star Transcriptomics/Collagen_Mapped_Simple_Differences/Pisas_Collagen_IDMAP.xlsx")
 goFilteredSheet <- getSheets(wb)[['GO_Filtered']]
 blastRows <- readRows(getSheets(wb)[['BLAST_RESULTS']], 2, 12871, 1,  2)
 access10 = getRows(goFilteredSheet, rowIndex=NULL)
